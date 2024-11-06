@@ -1,0 +1,522 @@
+Certainly! Here are each question followed by its answer:
+
+1. In C++, the declaration of functions and variables are collectively called …………………...
+– Declarations.
+
+
+2. A static member function can be called using the ………………… instead of its objects.
+– Class name.
+
+
+3. There are …………………………………. types of constructors are there in C++.
+– Three (default, parameterized, and copy constructors).
+
+
+4. The role of destructors in Classes is ………………………
+– To clean up resources when an object goes out of scope or is explicitly deleted.
+
+
+5. …………………….. is used to reduce the use of nested classes.
+– Inheritance.
+
+
+6. Function overloading is also similar to the ………………………………..
+– Method overloading.
+
+
+7. The essential operators in C++ is/are ……………………..
+– Arithmetic, relational, logical, bitwise, assignment, and others.
+
+
+8. What will be the output of the following C++ code?
+
+#include <iostream>
+using namespace std;
+int main () {
+    int a, b;         
+    a = 10; b = 4;            
+    a = b; b = 7;           
+    cout << "a:"; 
+    cout << a;
+    cout << " b:";
+    cout << b;
+    return 0;
+}
+
+Ans: – a:4 b:7
+
+
+9. Template helps in ……………………………………..
+– Writing generic code that can work with any data type.
+
+
+10. The constructor function can be constant. True / False?
+– False.
+
+
+11. The ‘this’ pointer is accessible ……………………………..
+– Within non-static member functions.
+
+
+12. If one thread opens a file with read privileges then ……………………..
+– Other threads can also read the file, but they can't write to it simultaneously.
+
+
+13. ………………….. is used to implement the C++ interfaces.
+– Abstract classes.
+
+
+14. ………….. is similar to the interface in C++.
+– Abstract class.
+
+
+15. Exception handling is implemented in the C++ program using …………………..
+– try, catch, and throw blocks.
+
+
+16. Evaluate the following Java expression, if x=3, y=5, and z=10:
+++z + y - y + z + x++
+Ans: – 25
+
+
+17. What is the output of the following?
+
+int x = 1; 
+while(x < 4) { 
+    System.out.println(x);
+    x++; 
+}
+
+Ans:
+1
+2
+3
+
+
+18. The correct hierarchy in JavaFX application is………………….
+– Stage > Scene > Node.
+
+
+19. The default argument of start() of Application class in JavaFX is ……………………
+– Stage.
+
+
+20. The method called by launch() of Application class in JavaFX is ……………..
+– start().
+
+
+21. A constructor is a special _____________________ used to initialize objects in a class.
+– Member function.
+
+
+22. Destructors are automatically called when an object goes out of ____________________ or is explicitly deleted.
+– Scope.
+
+
+23. A static member function can be called without creating an ______________________ of the class.
+– Instance.
+
+
+24. To overload a unary operator, we define a special ______________________ inside the class.
+– Member function.
+
+
+25. The syntax for overloading a binary operator involves using the operator keyword followed by the ___________________ symbol.
+– Operator.
+
+
+26. Generic functions promote code ____________________ by reducing redundancy and improving reusability.
+– Reusability.
+
+
+27. A generic class in C++ allows you to create a class that can operate on different _____________________ types.
+– Data.
+
+
+28. Exception handling in C++ is managed using the keywords try, catch, and ________________________.
+– Throw.
+
+
+29. The syntax for copy constructor is __________________________________
+– ClassName (const ClassName &obj) { /* ... */ }
+
+
+30. A variable in Java must be declared with a specific ________________ type, such as int, float, or String.
+– Data.
+
+
+31. Find the error:
+
+#include <iostream>
+int main() {
+    try {
+        throw 42;
+    } catch (double e) { // Catching the wrong type
+        std::cout << "Caught an exception of type double: " << e << std::endl;
+    }
+    std::cout << "Program finished." << std::endl;
+    return 0;
+}
+
+Ans: – Catch block should catch an int, not a double.
+
+
+32. this cannot be used in ________________ methods since they do not have an associated instance.
+– Static.
+
+
+33. To prevent a class from being inherited, you can declare it as ____________________.
+– Final (Java) or use private inheritance in C++.
+
+
+34. A software _____________________ is a collection of files, tools, and libraries that are bundled together for distribution and reuse.
+– Package.
+
+
+35. Packages help avoid ____________________ conflicts by grouping related classes into namespaces.
+– Naming.
+
+
+36. The keyword ____________________ is used to declare an interface in Java.
+– Interface.
+
+
+37. In Java, a ____________________ is a lightweight process that enables concurrent execution within a program.
+– Thread.
+
+
+38. To start a thread, you need to call the __________________ method on a Thread object.
+– start().
+
+
+39. JavaFX is primarily used for building __________________ applications in Java.
+– GUI.
+
+
+40. JavaFX supports ___________________ effects, allowing developers to apply visual effects like shadows and blurs to nodes.
+– Graphic
+
+
+Sure! Here are the questions followed by their answers:
+
+1. To access the member variables of a class, we use the ________________ operator.
+Answer: dot (.) operator.
+
+
+2. The function that is called when an object is destroyed is called the ___________________.
+Answer: destructor.
+
+
+3. A parameterized constructor in C++ allows an object to be initialized with specific values using ________________________________.
+Answer: constructor parameters.
+
+
+4. A static member function can be called using the class name and ________________ operator.
+Answer: scope resolution (::) operator.
+
+
+5. Static member functions cannot access non-static __________________________ of a class.
+Answer: member variables.
+
+
+6. What is the output of the following code?
+
+class Calculator {
+public:
+    int add(int a, int b) {
+        cout << "Adding integers: ";
+        return a + b;     
+    }
+    double add(double a, double b) {
+        cout << "Adding doubles: ";
+        return a + b;     
+    }
+};
+int main() {
+    Calculator calc;
+    cout << calc.add(5, 10) << endl;
+    cout << calc.add(5.5, 10.5) << endl;
+    return 0;
+}
+
+Answer:
+
+Adding integers: 15
+Adding doubles: 16.0
+
+
+7. To calculate the area of different objects in a single function name, we need to change the function's ___________________________________.
+Answer: parameter list (function signature).
+
+
+8. Unary operator overloading usually involves overloading operators like ______________ or ++.
+Answer: - or ++.
+
+
+9. To overload the + operator for adding two objects of a class, the return type of the operator function must be the class ____________________________.
+Answer: type.
+
+
+10. Function templates allow us to write functions that work with any data type using the keyword ________________________________.
+Answer: template.
+
+
+11. To instantiate a class template with a specific type, we specify the type in ________ brackets.
+Answer: angle.
+
+
+12. Division by zero is handled in C++ using ________ and ________ blocks.
+Answer: try and catch.
+
+
+13. In Java, to capture user input, we use the _________________ class from the java.util package.
+Answer: Scanner.
+
+
+14. In Java, the _______________________ keyword is used to refer to the current class instance.
+Answer: this.
+
+
+15. A Java package is declared using the ______________________ keyword.
+Answer: package.
+
+
+16. Find the error:
+
+
+
+class Vehicle {
+    public void startEngine() {
+        System.out.println("Vehicle engine started");     
+    }   
+}
+
+class Car extends Vehicle {
+    private void startEngine() { // Attempting to override the startEngine() method
+        System.out.println("Car engine started");     
+    }   
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle myCar = new Car();
+        myCar.startEngine();      
+    }    
+}
+
+Answer: The error is that the startEngine() method in the Car class is private, which means it cannot override the startEngine() method in the Vehicle class. The method in the Car class should have at least the same visibility (or be more public) as the method it is overriding.
+
+17. The syntax for creating a button using JAVA Fx Swing ___________________.
+Answer:
+
+
+
+JButton button = new JButton("Button Text");
+
+18. A Java class can extend the _________________________ class to create a new thread.
+Answer: Thread.
+
+
+19. JavaFX applications extend the _______________________ class to define the UI.
+Answer: Application.
+
+
+20. The method ______________________________ is the entry point for all JavaFX applications.
+Answer: start().
+
+
+Here are the questions followed by their answers:
+
+1. ________________ is the process of combining data and methods within a single unit in OOP.
+Answer: Encapsulation.
+
+
+2. What is the output for the following code?
+
+#include <iostream>
+using namespace std;
+class MyClass {
+public:
+    MyClass() {         
+        cout << "Default Constructor called" << endl;    
+    }
+    MyClass(int x) {         
+        cout << "Parameterized Constructor called with value: " << x << endl;     
+    } 
+};
+
+int main() {
+    MyClass obj1;      
+    MyClass obj2(10);  
+    return 0;  
+}
+
+Answer:
+
+Default Constructor called
+Parameterized Constructor called with value: 10
+
+
+3. Syntax for using “this” in Function Overloading is_________________________________.
+Answer: this->member_variable (when referring to a member variable of the current object).
+
+
+4. Two strings can be concatenated using the _______________ operator.
+Answer: + (addition) operator.
+
+
+5. To define a static member function outside the class, you need to use the class name followed by the ______________ operator.
+Answer: scope resolution (::) operator.
+
+
+6. Static member functions can be called using the class name without requiring an ___________________ to be created.
+Answer: object.
+
+
+7. In C++, a derived class can access the private members of its base class directly without any special access mechanisms. (True / False)?
+Answer: False.
+
+
+8. The syntax for copy constructor is __________________________________.
+Answer: ClassName(const ClassName &obj)
+
+
+9. The ___________________ constructor allows initialization of an object with specific values provided as arguments.
+Answer: Parameterized.
+
+
+10. The syntax for a simple function template that swaps two values is as follows: (fill the blank)
+
+template <_________>
+void swap(T &a, T &b) {
+    T temp = a;
+    a = b;
+    b = temp;
+}
+
+Answer: typename T or class T.
+
+
+11. The :: operator can be overloaded. True or False?
+Answer: False.
+
+
+12. When an exception is thrown, control is transferred to the corresponding ________ block that matches the exception type.
+Answer: catch.
+
+
+13. If no matching catch block is found, the program will terminate and display an ________ message.
+Answer: error.
+
+
+14. What does import java.util.*; do?
+Answer: It imports all classes from the java.util package.
+
+
+15. The default access modifier for interface methods in Java is _____________________.
+Answer: public.
+
+
+16. Syntax to implement multiple interfaces in JAVA ____________________________.
+Answer: class ClassName implements Interface1, Interface2 {}.
+
+
+17. The _________________ method is called to stop a thread, but it is deprecated due to potential safety issues.
+Answer: stop().
+
+
+18. When a thread completes its execution, it enters the ________________________ state.
+Answer: terminated (or dead).
+
+
+19. A __________________ is a UI component that allows users to enter a single line of text.
+Answer: TextField (or JTextField in Swing).
+
+
+20. To set an action event when a radio button is selected, you can use the _____________ method to add an event handler.
+Answer: addActionListener().
+
+
+21. An instance of a class is _________________
+Answer: an object.
+
+
+
+Here are your questions followed by their answers:
+
+1. A special function used to initialize objects of its class is __________________________.
+Answer: Constructor.
+
+
+2. ____________________________________ Constructor will accept parameters.
+Answer: Parameterized Constructor.
+
+
+3. The static member functions can be called using _____________________________.
+Answer: the class name and the scope resolution (::) operator.
+
+
+4. Function with ___________________ name but ____________________ parameters is called function overloading.
+Answer: the same name but different parameters.
+
+
+5. Ability to provide the operators with some special meaning for user-defined data types is _________________________________.
+Answer: Operator overloading.
+
+
+6. A feature that allows the programmer to write generic programs is called __________________.
+Answer: Templates (or Generics in Java).
+
+
+7. Divide by zero is an _____________________________ in C++.
+Answer: runtime error (or exception).
+
+
+8. ___________________________ keyword is used to throw an exception.
+Answer: throw.
+
+
+9. _______________________ is the use of “this” keyword in Java.
+Answer: It refers to the current object (or instance) of the class.
+
+
+10. __________________________ keyword is used to implement inheritance between the classes.
+Answer: extends.
+
+
+11. To call a method or constructor of the superclass, ____________________ keyword is used in Java.
+Answer: super.
+
+
+12. The concept of redefining a superclass method in a subclass with the same method signature is __________________________________.
+Answer: Method overriding.
+
+
+13. ___________________________ keyword is used to implement an interface in a class.
+Answer: implements.
+
+
+14. What is an interface?
+Answer: An interface is a reference type in Java that is similar to a class and is used to specify a set of methods that a class must implement, without providing the implementation for those methods.
+
+
+15. ___________ package stores all the standard Java classes.
+Answer: java.lang.
+
+
+16. What is a thread in Java?
+Answer: A thread is a lightweight subprocess, the smallest unit of processing, which allows concurrent execution of two or more parts of a program for maximum utilization of CPU.
+
+
+17. What is the purpose of the start() method in Java Threads?
+Answer: The start() method is used to begin the execution of a thread. It invokes the run() method in a new thread of execution, allowing the thread to run concurrently with other threads.
+
+
+18. What are UI controls in JavaFX?
+Answer: UI controls in JavaFX are components used to create user interfaces, such as buttons, text fields, labels, checkboxes, radio buttons, and lists, which allow users to interact with the application.
+
+
+19. Syntax for creating a button in a JavaFX project class.
+Answer:
+
+Button button = new Button("Button Text");
